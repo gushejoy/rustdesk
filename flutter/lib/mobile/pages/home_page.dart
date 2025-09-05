@@ -151,11 +151,7 @@ class HomePageState extends State<HomePage> {
       );
     }
     return Text('CuteKVM');
-<<<<<<< HEAD
     // return Text(bind.mainGetAppNameSync());
-=======
-//return Text(bind.mainGetAppNameSync());
->>>>>>> 247cb8b1133b8ac72005e81cc2daf2bba7c59c17
   }
 }
 

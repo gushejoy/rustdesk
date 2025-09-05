@@ -161,7 +161,8 @@ class _RemotePageState extends State<RemotePage> with WidgetsBindingObserver {
       trySyncClipboard();
     } else if (state == AppLifecycleState.paused) {
     // 应用进入后台时断开连接
-    closeConnection();
+      closeConnection();
+    }
   }
 
   // For client side

@@ -150,7 +150,8 @@ class HomePageState extends State<HomePage> {
         ],
       );
     }
-    return Text(bind.mainGetAppNameSync());
+    return Text('CuteKVM');
+    // return Text(bind.mainGetAppNameSync());
   }
 }
 
@@ -166,7 +167,7 @@ class WebHomePage extends StatelessWidget {
       // backgroundColor: MyTheme.grayBg,
       appBar: AppBar(
         centerTitle: true,
-        title: 'CuteKVM',
+        title: Text('CuteKVM'),
         actions: connectionPage.appBarActions,
       ),
       body: connectionPage,

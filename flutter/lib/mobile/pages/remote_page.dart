@@ -59,7 +59,8 @@ class RemotePage extends StatefulWidget {
 
 class _RemotePageState extends State<RemotePage> with WidgetsBindingObserver {
   Timer? _timer;
-  bool _showBar = !isWebDesktop;
+  // bool _showBar = !isWebDesktop;
+  bool _showBar = false; // 默认不显示BottomAppBar
   bool _showGestureHelp = false;
   String _value = '';
   Orientation? _currentOrientation;

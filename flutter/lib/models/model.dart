@@ -276,12 +276,13 @@ class FfiModel with ChangeNotifier {
   }
 
   handleCachedPeerData(CachedPeerData data, String peerId) async {
-    handleMsgBox({
-      'type': 'success',
-      'title': 'Successful',
-      'text': kMsgboxTextWaitingForImage,
-      'link': '',
-    }, sessionId, peerId);
+    // 去掉连接成功提示
+    // handleMsgBox({
+    //   'type': 'success',
+    //   'title': 'Successful',
+    //   'text': kMsgboxTextWaitingForImage,
+    //   'link': '',
+    // }, sessionId, peerId);
     updatePrivacyMode(data.updatePrivacyMode, sessionId, peerId);
     setConnectionType(peerId, data.secure, data.direct, data.streamType);
     await handlePeerInfo(data.peerInfo, peerId, true);

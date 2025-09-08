@@ -992,6 +992,7 @@ class FfiModel with ChangeNotifier {
 
   void showConnectedWaitingForImage(OverlayDialogManager dialogManager,
       SessionID sessionId, String type, String title, String text) {
+    return; // 直接返回，不显示弹窗
     onClose() {
       closeConnection();
     }

@@ -52,10 +52,11 @@ class HomePageState extends State<HomePage> {
         appBarActions: [],
       ));
     }
-    if (isAndroid && !bind.isOutgoingOnly()) {
-      _chatPageTabIndex = _pages.length;
-      _pages.addAll([ChatPage(type: ChatPageType.mobileMain), ServerPage()]);
-    }
+    // 去掉 chat及serverpage页面
+    // if (isAndroid && !bind.isOutgoingOnly()) {
+    //   _chatPageTabIndex = _pages.length;
+    //   _pages.addAll([ChatPage(type: ChatPageType.mobileMain), ServerPage()]);
+    // }
     _pages.add(SettingsPage());
   }
 

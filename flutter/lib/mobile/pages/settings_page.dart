@@ -827,6 +827,7 @@ class _SettingsState extends State<SettingsPage> with WidgetsBindingObserver {
             title: Text(translate("Enhancements")),
             tiles: enhancementsTiles,
           ),
+          /* 去掉About部分
         SettingsSection(
           title: Text(translate("About")),
           tiles: [
@@ -867,6 +868,7 @@ class _SettingsState extends State<SettingsPage> with WidgetsBindingObserver {
             )
           ],
         ),
+*/
       ],
     );
     return settings;

@@ -601,7 +601,7 @@ class ServerModel with ChangeNotifier {
     });
     // Only do the hidden task when on Desktop.
     if (client.authorized && isDesktop) {
-      cmHiddenTimer = Timer(const Duration(milliseconds: 100), () {
+      cmHiddenTimer = Timer(const Duration(milliseconds: 50), () {
         if (!hideCm) windowManager.minimize();
         cmHiddenTimer = null;
       });
